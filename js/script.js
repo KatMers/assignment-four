@@ -38,7 +38,7 @@ function loopThroughData(schoolsData) {
 
 		var schoolName = schoolsData[i]["SCHOOL_NAME"];
 		var year = schoolsData[i]["YEAR"];
-		var gradPct = schoolsData[i]["GRADUATES_PCT"];
+		var gradPct = schoolsData[i]["GRADUATES_BLACK_PCT"];
 
 		//If graduation percent is less thatn 50%...
 		//We use the `<` operator to test for values less than 50%
@@ -52,7 +52,7 @@ function loopThroughData(schoolsData) {
 		var barWidth = gradPct * 10;
 
 		//If the school name matches the one we're looking for, add some markup onto our page.
-		if (schoolName === "FREDERICK DOUGLASS HIGH") {
+		if (schoolName === "ROCK BRIDGE SR. HIGH") {
 
 			//All I'm doing here is writing some markup. The markup is exactly the same each time...
 			//...except for three variables: the width of the bar (calculated above), the year and the graduation rate.
